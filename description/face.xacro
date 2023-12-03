@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
-    <joint name="face_joint" type="fixed">
+    <!-- <joint name="face_joint" type="fixed">
         <parent link="chassis"/>
         <child link="face_link"/>
         <origin xyz="${chassis_length} 0 ${chassis_height/2}" rpy="0 0 0"/>
@@ -36,7 +36,7 @@
 
     <gazebo reference="face_link">
         <material>Gazebo/Black</material>
-    </gazebo>
+    </gazebo> -->
 
 
 </robot>

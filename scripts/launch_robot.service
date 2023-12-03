@@ -1,0 +1,10 @@
+[Unit]
+Description=ROS 2 Launch File
+
+[Service]
+Try=simple
+ExecStart=/bin/bash -c "source /opt/ros/foxy/setup.bash && source /home/jetson/robot_ws/install/setup.bash && ros2 launch travelbuddy launch_robot.launch.py"
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
